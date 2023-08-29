@@ -1,0 +1,52 @@
+.field{
+  display: grid;
+  grid-template-columns:125px 125px 125px;
+  align-items: center;
+grid-gap:20px 20px;
+  margin: 100px 250px;
+}
+.field-button{
+  height: 100px;
+  border-radius: 200px;
+  border: solid black 3px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.field-score-grid{
+  display: grid;
+  grid-template-columns: 500px 400px;
+  column-gap: 400px;
+
+}
+.score-board{
+  font-size: 60px;
+  font-family: Arial;
+  font-weight: bold;
+  margin-top: 0px;
+}
+.x-wins,
+.o-wins,
+.draws{
+  font-size: 40px;
+}
+.message{
+  font-size: 30px;
+}
+.reset-button,.new-game{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: solid black 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: aquamarine;
+}
+.reset-button:hover{
+  opacity: 85%;
+}
+.new-game:hover{
+  opacity: 85%;
+}
+.disabled-button{
+  color: black;
+}

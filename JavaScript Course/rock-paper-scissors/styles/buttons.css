@@ -1,0 +1,59 @@
+.rock-button{
+  border: black;
+  border-radius: 50px;
+border-style: solid;
+background-color: white;
+margin-right: 60px;
+margin-left: 40px;
+}
+.rock-button:hover{
+  opacity: 0.75;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.paper-button{
+  border: black;
+  border-radius: 50px;
+border-style: solid;
+background-color: white;
+margin-right: 60px; ;
+}
+.paper-button:hover{
+  opacity: 0.75;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.scissors-button{
+  border: black;
+  border-radius: 50px;
+border-style: solid;
+background-color: white;
+margin-right: 40px;
+}
+.scissors-button:hover{
+  opacity: 0.75;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.reset-button{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  height: 50px;
+  width: 100px;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+background-color: white;
+}
+.reset-button:hover{
+  opacity: 0.75;
+  transition: 0.15s;
+  cursor: pointer;
+}
+.buttons-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 125px;
+}

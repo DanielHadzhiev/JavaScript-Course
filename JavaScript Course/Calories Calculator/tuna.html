@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/tuna.css">
+  <title>Tuna</title>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html">
+      <button class="home-button">
+      Home
+      </button>
+    </a>
+    <button onclick="
+    localStorage.setItem('calories','0');
+    document.querySelector('.calories-counter').innerHTML = 'Current calories: 0';
+    " class = "reset-button">
+      Reset calories
+    </button>
+<p class="calories-counter">
+  Current calories: 0
+</p>
+  </div>
+<img class="tuna-image" src="images/tuna.jpg">
+<div class="mid-section">
+  <p class="instructions">
+    Enter the amount below ↓
+  </p>
+<input class="grams" placeholder="Enter amount">
+<button onclick="
+const amount = document.querySelector('.grams').value;
+calculateCalories(Number(amount));
+" class="ok-button">
+  Ok
+</button>
+</div>
+</button>
+<script src="scripts/tuna.js">
+</script>
+</body>
+</html>

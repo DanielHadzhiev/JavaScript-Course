@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <title>Calories Calculator</title>
+</head>
+<body>
+  <div class="header">
+    <a href="index.html">
+      <button class="home-button">
+      Home
+      </button>
+    </a>
+    <button onclick="
+    localStorage.setItem('calories','0');
+    document.querySelector('.calories-counter').innerHTML = 'Current calories: 0';
+    " class = "reset-button">
+      Reset calories
+    </button>
+<p class="calories-counter">
+  Current calories: 0
+</p>
+  </div>
+
+  <div class="mid-section">
+  <p class="instructions">
+    Instructions: Insert the food you are looking for in the text bar below. Then insert the quantity of the food. The calories will be added to the total calories you ate.
+  </p>
+  <input class="search-bar" type="text" placeholder="Search your food here">
+  <button onclick="
+  const input = document.querySelector('.search-bar').value;
+  connectPages(input.toLowerCase());
+  " class="search-button">
+    Search
+  </button>
+  <p class="disclaimer">
+    Disclaimer: The amount of calories are reseted every day!
+  </p>
+</div>
+<script src="scripts/index.js">
+</script>
+</body>
+</html>
