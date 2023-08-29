@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Subscribe Button</title>
+    <style>
+      .subscribe-button{
+        border-radius: 15px;
+        border: none;
+        color: white;
+        background-color: red;
+        height: 30px;
+        width: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: 0.2s;
+      }
+      .subscribe-button:hover{
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Youtube Subscribe Button</p> 
+  <button onclick="
+  const button = document.querySelector('.subscribe-button');
+  if(button.innerText === 'Subscribed')
+  {
+button.innerText='Subscribe';
+  }
+  else{
+    button.innerText='Subscribed';
+  }
+  " class = "subscribe-button">
+  Subscribe
+</button>
+    <script>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <title>05variables</title>
+</head>
+<body>
+  
+  <button onclick="console.log('Products count:'+productsCount)">
+    Show Quantity</button>
+
+  <button onclick="productsCount +=1; 
+  console.log('Products count:'+productsCount);">
+  Add To Cart</button>
+
+  <button onclick="productsCount +=2; 
+  console.log('Products count:'+productsCount);">+2</button>
+
+  <button
+  onclick="productsCount +=3; 
+  console.log('Products count:'+productsCount);">+3</button>
+
+  <button onclick="productsCount = 0; 
+  console.log('Products count:'+productsCount);
+  console.log('Your cart has been reseted!');">Reset Cart</button>
+
+  <script>
+    let productsCount = 0;
+  </script>
+</body>
+</html>
